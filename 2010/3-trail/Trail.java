@@ -7,9 +7,13 @@
  */
 public class Trail
 {
+    
     /** Representation of the trail. The number of markers on the trail is markers.length. */
     private int[] markers;
-
+    
+    /** Constructs a trail given its altitude markers
+     * @param markers the array containing the marker varaibles
+     */
         public Trail(int[] markers)
     {
         this.markers = markers;
@@ -66,5 +70,6 @@ public class Trail
         }
 
         return count >= 3;
-    }           
+    }   
+    
 }

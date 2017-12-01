@@ -8,6 +8,7 @@ import java.util.Arrays;
  */
 public class SelfDivisorTester
 {
+    
     /** Tests the SelfDivisor class using various examples
      * 
      */
@@ -19,4 +20,5 @@ public class SelfDivisorTester
         System.out.println(Arrays.toString(SelfDivisor.firstNumSelfDivisors(10, 3)));
         System.out.println(Arrays.toString(SelfDivisor.firstNumSelfDivisors(1,100)));
     }
+    
 }
