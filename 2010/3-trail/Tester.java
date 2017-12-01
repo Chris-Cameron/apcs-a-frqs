@@ -8,7 +8,7 @@
 
 import java.util.Arrays;
 
-public class TrailTester
+public class Tester
 {
     
     /** Tests the trail class using various arrays.
