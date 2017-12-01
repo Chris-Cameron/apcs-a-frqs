@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @Christopher Cameron
  * @Nov. 20, 2017
  */
-public class SelfDivisorTester
+public class Tester
 {
     
     /** Tests the SelfDivisor class using various examples
