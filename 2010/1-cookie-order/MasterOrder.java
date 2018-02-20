@@ -63,5 +63,15 @@ public class MasterOrder
         
         return boxTotal;
     }
+    
+    /** prints the contents of the master order
+     */
+    public void print()
+    {
+        for(CookieOrder c: orders)
+        {
+           System.out.println(c.getVariety()+" "+c.getNumBoxes()); 
+        }
+    }
 }
 

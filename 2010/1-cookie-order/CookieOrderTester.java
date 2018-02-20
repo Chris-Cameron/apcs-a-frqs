@@ -1,33 +1,31 @@
 
 /**
- * Write a description of class CookieOrderTester here.
+ * Tests the MasterOrder class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Christopher cameron
+ * @v1
  */
 public class CookieOrderTester
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class CookieOrderTester
+    /** Tests the getTotalBoxes and removeVariety methods
      */
-    public CookieOrderTester()
+    public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        MasterOrder goodies = new MasterOrder();
+        goodies.addOrder(new CookieOrder ("Chocolate Chip", 1));
+        goodies.addOrder(new CookieOrder ("Shortbread", 5));
+        goodies.addOrder(new CookieOrder ("Macaroon", 2));
+        goodies.addOrder(new CookieOrder ("Chocolate Chip", 3));
+        
+        goodies.print();
+         
+        System.out.println();
+        System.out.println(goodies.getTotalBoxes());
+        
+        System.out.println(goodies.removeVariety("Brownie"));
+        System.out.println(goodies.removeVariety("Chocolate Chip"));
+        
+        System.out.println();
+        goodies.print();
     }
 }
