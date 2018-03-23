@@ -1,33 +1,32 @@
 
 /**
- * Write a description of class NonTaxableItem here.
+ * Creates a Non-Taxable Item object
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Christopher Cameron
+ * @v1
  */
-public class NonTaxableItem
+public class NonTaxableItem implements Item
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    /** The cost of the item*/
+    private double price;
+    
     /**
-     * Constructor for objects of class NonTaxableItem
+     * Constructs a NonTaxableItem given its price
+     * 
+     * @param price the price of the item
      */
-    public NonTaxableItem()
+    public NonTaxableItem(double price)
     {
-        // initialise instance variables
-        x = 0;
+        this.price = price;
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Returns the purchase price of the item
+     * 
+     * @return price the price of  the item 
      */
-    public int sampleMethod(int y)
+    public double purchasePrice()
     {
-        // put your code here
-        return x + y;
+        return price;
     }
 }
