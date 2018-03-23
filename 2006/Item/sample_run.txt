@@ -1,0 +1,10 @@
+Non-Taxable Item Price:
+22222.0
+
+Vehicle Prices:
+List Price: 22500.0
+Purchase Price: 24750.000000000004
+
+Vehicle Price After Markup Change:
+List Price: 21000.0
+Purchase Price: 23100.000000000004
